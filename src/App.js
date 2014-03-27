@@ -10,7 +10,6 @@ Ext.define('CustomApp', {
     items:[
 	{
 	    xtype: 'panel',
-	    //title: 'Features by Release',
 	    layout: {
 		type: 'accordion',
 		titleCollapse: false,
@@ -22,22 +21,9 @@ Ext.define('CustomApp', {
 		itemId: 'container-for-combobox',
 		height: 200
 	    },{
-		title: 'Table',
-		layout: {
-		    type: 'table',
-		    columns: 1,
-		    tableAttrs: {
-		       style: {
-			  width: '100%',
-			  height: '100%'
-		       }
-		    }
-		},
-		items:[{
-		    //title:'Grid',
-		    itemId: 'container-for-grid'
-		    }
-		]
+		xtype: 'panel',
+		itemId: 'container-for-grid',
+		layout: 'fit'
 	    }
 	    ]
 	}
